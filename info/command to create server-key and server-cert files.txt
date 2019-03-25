@@ -1,0 +1,28 @@
+https://superuser.com/questions/620121/what-is-the-difference-between-a-certificate-and-a-key-with-respect-to-ssl
+
+Info found here: https://flaviocopes.com/express-https-self-signed-certificate/
+
+C:\NodeProjects\JWTTest\src\encryption>cd "c:\Program Files\OpenSSL-Win64\bin"
+
+c:\Program Files\OpenSSL-Win64\bin>openssl req -nodes -new -x509 -keyout C:\NodeProjects\JWTTest\src\encryption\server.key -out C:\NodeProjects\JWTTest\src\encryption\server.cert
+Generating a RSA private key
+..............................+++++
+...................+++++
+writing new private key to 'C:\NodeProjects\JWTTest\src\encryption\server.key'
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:US
+State or Province Name (full name) [Some-State]:Florida
+Locality Name (eg, city) []:Miami
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:Auris
+Organizational Unit Name (eg, section) []:Dev
+Common Name (e.g. server FQDN or YOUR name) []:LocalPC
+Email Address []:fborot@auris.com
+
+c:\Program Files\OpenSSL-Win64\bin>
